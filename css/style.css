@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Roboto:ital,wght@0,500;0,900;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../img/lliquid_colors.png') no-repeat center center/cover;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.container {
+    /*background-color: rgb(252, 218, 218); */
+    /*background-color: rgb(253, 246, 184); */
+    background-image: linear-gradient(to right, #fff , rgb(185, 180, 180));
+    border: 3px solid rgb(8, 199, 224);
+    border-radius: 5%;
+    margin-top: 3em;
+    height: 85vh;
+    width: 60%;  
+}
+
+h1 {
+    font-family: 'Ranchers', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: black;
+    letter-spacing: .6rem;
+}
+
+
+h2 {
+    font-weight: bold;
+}
+
+.col-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+a {
+    width: 60%;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn {
+    background-color: aliceblue;
+    /*color: rgb(228, 43, 43); */
+    color: steelblue;
+    text-decoration: none;
+    border-color: rgb(8, 199, 224);
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(8, 199, 224);
+    text-decoration: none;
+    color: #fff;
+    border-color: #fff;
+    
+}
+
+/* Index page */
+#main-tutorial {
+    margin: 1.5rem auto;
+}
+.col-6 p {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: steelblue;
+    font-size: 1.1em;
+}
+.divImage {
+    width: 100%;
+}
+.divImage img {
+    max-width: 100%;
+}
+.col p {
+    margin-top: 1rem;
+    font-size: 1.1em;
+}
+.col h3 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+
+
+/* Game page */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header > .btn {
+    width: 20%;
+    border: 2px solid rgb(8, 199, 224);
+}
+.a-quit {
+    padding: 0;
+}
+.quit {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.row-grid {
+    height: 80%;
+}
+.col-grid {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    align-content: center;
+    align-items: center;
+}
+.col-grid h1 {
+    font-size: 3.8rem;
+}
+
+#colorPlaceholder {
+    width: 60%;
+    padding: 5px;
+    /*background-color:rgb(180, 245, 220); */
+    background-color: rgb(147, 238, 250);
+    font-weight: bold;
+    font-size: 2rem;
+    border-color: rgb(8, 199, 224);
+    border-radius: 8px;
+    box-shadow: 3px 6px rgb(8, 199, 224);
+}
+
+#playersColor {
+    width: 50%;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 3px 6px #333;
+}
+
+#start {
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid rgb(8, 199, 224);
+    border-radius: 8px;
+    background-color: rgb(8, 199, 224);
+    color: #fff;
+}
+#start:active {
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    border: none;
+}
+#start:focus {
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    outline: none;
+}
+
+.col-xl-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.col-xl-2 > div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.col-xl-2 > div > label {
+    margin: 2px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+
+/* Score board */
+#myDiv {
+    margin: 20px 0;
+}
+
+#myTable {
+    width: 100%;
+    /* border: 2px solid rgb(8, 199, 224);
+    border-radius: 8px; */
+    text-align: center;
+    border-collapse: separate;
+}
+
+#myTable thead {
+    background-color: #ccc;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#myTable thead td {
+    padding: 10px;
+}
+
+#myTable tbody {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#myTable tbody td {
+    padding: 5px;
+}
+
+#clearTable {
+    margin-top: 10px;
+    background-color: aliceblue;
+    color: steelblue;
+    text-decoration: none;
+    border: 3px solid rgb(8, 199, 224);
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40%;
+    padding: 15px 20px;
+}
+
+#clearTable:hover {
+    background-color: rgb(8, 199, 224);
+    text-decoration: none;
+    color: #fff;
+    border-color: #fff;  
+}
+
+
+
+/* Media Query */
+@media (max-width: 1366px) {
+    body {
+        background-repeat: repeat;
+    } 
+}
+
+@media (max-width: 780px) {
+    header > .btn {
+        font-size: 0.9em;
+    }
+
+    .quit {
+        font-size: 0.9em;
+    }
+
+    .col-grid h1 {
+        font-size: 3rem;
+    }
+    .col-grid div {
+        margin-top: 15px;
+    }
+    #playersColor {
+        width: 60%;
+        margin-top: 5px;
+    }
+
+    .container {
+        width: 75%;
+    }
+    .col-6 {
+        padding: 0;
+    }
+    .col-6 p {
+        font-size: 1em;
+    }
+
+    .col p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .col-6 {
+        font-size: 0.8em;
+    }
+    .col-grid h1 {
+        font-size: 2.5rem;
+
+    }
+    .container-index h1 {
+        font-size: 2.5rem;
+
+    }
+}
+
+@media (max-width: 430px) {
+    .container-index h1 {
+        font-size: 2rem;
+        letter-spacing:0.1em;
+    }
+    .col p {
+        margin-top: 0.5rem;
+        font-size: 0.9em;
+    }
+    .col h3 {
+        margin-top: 0.5rem;
+    }
+    
+    .col-grid {
+        padding: 0;
+    }
+    .col-grid h1 {
+        font-size: 2rem;
+        letter-spacing:0.1em;
+    }
+    .col-grid h2 {
+        font-size: 1.2rem;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header > .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .container-index h1 {
+        font-size: 2rem;
+        
+    }
+    .container-index h2 {
+        font-size: 1.2em;
+    }
+
+    .col p {
+        margin-top: 0;
+        font-size: 0.9em;
+    }
+    .col h3 {
+        margin-top: 0;
+    }
+
+    .col-grid h2 {
+        font-size: 1rem;
+    }
+
+    #colorPlaceholder {
+        width: 80%;
+    }
+
+    #playersColor {
+        width: 80%;
+    }
+}
+
+/* Vertical */
+@media (max-height: 800px) {
+    .container {
+        height: 100%;
+    }
+}
