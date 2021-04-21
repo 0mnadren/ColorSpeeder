@@ -25,7 +25,6 @@ const myStorage = window.localStorage;
 window.addEventListener('DOMContentLoaded', function () {
     if (localStorage.getItem('username') != null) {
         userNameArray = JSON.parse(localStorage.getItem('username'));
-        console.log(userNameArray);
     }      
 });
 
@@ -74,7 +73,6 @@ input.addEventListener('keydown', (e) => {
 // Check if the random color is the same as player's input
 input.addEventListener('keyup', (e) => {
     if (e.key == "Enter") {
-        console.log(playerColor, randomColor);
         if (randomColor === playerColor) {
             scorePoint();
             randomColor = putRandomColor();
@@ -125,7 +123,7 @@ function time() {
         timerInterval = setInterval(tick, 1000);
         headerInterval = setInterval(changeHeader, 2000);
     } else {
-        console.log('Vec je pokrenut')
+        console.log('Already started!')
     }   
 }
 
