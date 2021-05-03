@@ -331,6 +331,10 @@ header > .btn {
         font-size: 1.2rem;
     }
 
+    #main-tutorial{
+        margin-top: 0;
+    }
+
     header {
         display: grid;
         grid-template-columns: 1fr 1fr;

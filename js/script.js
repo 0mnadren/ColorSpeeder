@@ -7,8 +7,8 @@ let containerInterval = null;
 var totalScored = 0;
 let score = 0;
 let errors = 0;
-const audio_score = new Audio('../audio/score_sound.wav');
-const audio_error = new Audio('../audio/error_sound.wav');
+const audio_score = new Audio('audio/score_sound.wav');
+const audio_error = new Audio('audio/error_sound.wav');
 
 var userName = null;
 var userScore = null;
